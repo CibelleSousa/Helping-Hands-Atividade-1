@@ -39,9 +39,13 @@ function App() {
 
   return (
     <>
-      <Header />
-      <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
-      <ServiceList services = {filteredServices}/>
+      <div className='app-container'>
+        <Header />
+        <main className='main-content'>
+          <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
+          <ServiceList services = {filteredServices}/>
+        </main>
+      </div>
     </>
   )
 }
