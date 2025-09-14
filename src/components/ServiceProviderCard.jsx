@@ -1,3 +1,5 @@
+import { FaRegCalendarAlt, FaRegQuestionCircle, FaRegHeart } from "react-icons/fa";
+
 const styleTemporario = {
     border: '1px solid black', 
     margin: '10px', 
@@ -17,10 +19,9 @@ function ServiceProviderCard(props) {
                 <p className="focus-description">{service.focoDescricao}</p>
                 <div className="card-actions">
                     <button className="info-button">Info</button>
-                    <button className="calendar-button">Calendar</button>
-                    <button className="i-button">i</button>
-                    <button className="doubts-button">?</button>
-                    <button className="like-button">Heart</button>
+                    <button className="icon-button" title="Ver Agenda"><FaRegCalendarAlt/></button>
+                    <button className="icon-button" title="Dúvidas Frequentes"><FaRegQuestionCircle/></button>
+                    <button className="icon-button" title="Favoritar"><FaRegHeart/></button>
                 </div>
             </div>
         </div>

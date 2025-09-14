@@ -1,7 +1,10 @@
+import { FaSearch, FaFilter } from "react-icons/fa";
+
 function SearchBar(props) {
   return (
     <div className="search-container">
         <div className="search-input-wrapper">
+            <FaSearch className="search-icon"/>
             <input
             type="text"
             id="search"
@@ -11,8 +14,7 @@ function SearchBar(props) {
             />
         </div>
         <div>
-            <button type="button" className="filter-button">Filtros</button>
-            <button type="button" className="search-button">Buscar</button>
+            <button type="button" className="filter-button"><FaFilter/></button>
         </div>
         
     </div>
