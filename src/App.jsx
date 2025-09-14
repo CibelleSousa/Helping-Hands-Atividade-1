@@ -43,6 +43,7 @@ function App() {
         <Header />
         <main className='main-content'>
           <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
+          <h2 className='servicos'>Serviços</h2>
           <ServiceList services = {filteredServices}/>
         </main>
       </div>
