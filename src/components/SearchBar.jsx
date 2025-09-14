@@ -3,7 +3,6 @@ import { FaSearch, FaFilter } from "react-icons/fa";
 function SearchBar(props) {
   return (
     <div className="search-container">
-        <div className="search-input-wrapper">
             <FaSearch className="search-icon"/>
             <input
             type="text"
@@ -12,10 +11,7 @@ function SearchBar(props) {
             value={props.searchTerm}
             onChange={(e) => props.onSearchChange(e.target.value)}
             />
-        </div>
-        <div>
-            <button type="button" className="filter-button"><FaFilter/></button>
-        </div>
+            <button type="button" className="filter-button"><FaFilter className="filter-icon"/></button>
         
     </div>
   )
