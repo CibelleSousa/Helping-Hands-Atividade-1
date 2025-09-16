@@ -137,7 +137,7 @@ header {
   border-radius: 16px;
 }
 .full-card-profile:hover { /* Define propriedades quando o mouse está sobre um cartão de perfil */
-  box-shadow: 0 0 20px 5px #FEE38A,
+  box-shadow: 0 0 20px 3px #FEE38A,
               0 0 40px 5px #C24500;
   cursor: pointer;
 }
@@ -228,8 +228,8 @@ header {
   text-align: left;
   padding-bottom: 25px;
 }
-.servicos { /* Manipula o h1 de Serviços presente no site */
-  color: #EF762F;
+.servicos { /* Manipula o h2 de Serviços presente no site */
+  color: #923500;
   font-family: 'League Spartan';
   font-weight: 600;
   font-size: 30px;

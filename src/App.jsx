@@ -9,9 +9,13 @@ import MockedData from './data/mockedServices.js'
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Lógica de filtragem
+  /**
+   * Lista de serviços filtrada com base no 'searchTerm'.
+   * A busca pela lista filtrada é flexível: procura o termo tanto no NOME do prestador quanto no SERVIÇO oferecido, e ignora maiúsculas/minúsculas.
+   */
   const filteredServices = MockedData.filter(
-      service => service.nome.toLowerCase().includes(searchTerm.toLowerCase())
+      service => service.nome.toLowerCase().includes(searchTerm.toLowerCase()) || 
+      service.servico.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
   );
 
   return (
