@@ -1,3 +1,9 @@
+/**
+ * Este arquivo simula uma base de dados para a aplicação "Helping Hands".
+ * Os dados foram intencionalmente diversificados para permitir testes
+ * de diferentes cenários de busca na interface, como nomes compostos,
+ * acentos e termos ambíguos.
+ */
 const MockedData = [
   { id: 1, nome: 'Letícia Oliveira', servico: 'Pet care', urlFoto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_WOevl5t3J8UeAEq5tMF9ypeY_JRuB3iGw&s', focoDescricao: 'Foco em cuidado atencioso e responsável para pets de pequeno e médio porte.' },
   { id: 2, nome: 'Renata França', servico: 'Shopping Assistant', urlFoto: 'https://st4.depositphotos.com/12982378/24512/i/450/depositphotos_245124972-stock-photo-charming-curly-woman-smiling-closed.jpg', focoDescricao: 'Auxílio em compras e organização de tarefas do dia a dia.' },
