@@ -11,7 +11,7 @@ function SearchBar(props) {
             value={props.searchTerm}
             onChange={(e) => props.onSearchChange(e.target.value)}
             />
-            <button type="button" className="filter-button"><FaFilter className="filter-icon"/></button>
+            <button type="button" aria-label="Botão de filtro" className="filter-button"><FaFilter className="filter-icon"/></button>
         
     </div>
   )
