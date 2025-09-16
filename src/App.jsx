@@ -11,7 +11,8 @@ function App() {
 
   // Lógica de filtragem
   const filteredServices = MockedData.filter(
-      service => service.nome.toLowerCase().includes(searchTerm.toLowerCase())
+      service => service.nome.toLowerCase().includes(searchTerm.toLowerCase()) || 
+      service.servico.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
   );
 
   return (

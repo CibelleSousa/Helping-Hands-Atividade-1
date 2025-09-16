@@ -7,7 +7,7 @@ function SearchBar(props) {
             <input
             type="text"
             id="search"
-            placeholder="Digite o nome do profissional"
+            placeholder="Digite o que deseja encontrar"
             value={props.searchTerm}
             onChange={(e) => props.onSearchChange(e.target.value)}
             />
