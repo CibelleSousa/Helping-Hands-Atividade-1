@@ -14,18 +14,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-header{
+header {
   width: auto;
 }
 
-.app-header{
+.app-header { /* O corpo e cor do header é definido aqui */
   color: white;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
-  background-color:#FEE38AA8;
+  background-color: #FEE38AA8;
   justify-content: center;
 }
-.Logo{
+.logo { /* Edita a parte do header onde a logo está localizada */
   background: linear-gradient(
     to right,
     #E65100,
@@ -40,37 +40,37 @@ header{
   justify-content: center;
   column-gap: 20px;
 }
-.header-icons{
+.header-icons { /* Manipula a parte do header onde os logos estão localizados */
   column-count: 4;
   column-gap: 30px;
 }
-#logo-img{
+#logo-img { /* Manipula a logomarca */
   height: auto;
   width: auto;
   max-width: 50px;
 }
-#logo-info{
+#logo-info { /* Manipula o logotipo */
   font-family: 'League Spartan';
   font-weight: 100;
   font-size: 50px;
   color: white;
 }
-.main-nav{
+.main-nav { /* Manipula a nav em que os ícones do header estão localizados */
   justify-self: center;
   width: fit-content;
   margin: auto;
   column-gap: 20px;
 }
-.icon-header{
+.icon-header { /* Manipula os ícones presentes no header */
   height: 30px;
   width: 30px;
   padding: auto;
   margin: auto;
 }
-.header-icons li{
+.header-icons li { /* Manipula os aspectos da lista de ícones do header */
   list-style-type: none;
 }
-.search-container{
+.search-container { /* Manipula o container da barra de pesquisa */
   background-color: #FEE38AA8;
   display: flex;
   margin: auto;
@@ -81,11 +81,11 @@ header{
   align-items: center;
   border-radius: 22px;
 }
-#search{
+#search { /* Manipula a barra de pesquisa */
   margin: calc(200px - 100%);
   width: calc(100% - 100px);
   color: #000;
-  background-color:transparent;
+  background-color: transparent;
   height: inherit;
   margin: auto;
   border-radius: 15vh;
@@ -94,7 +94,7 @@ header{
   padding-left: 10px;
   font-size: 18px;
 }
-.search-icon{
+.search-icon { /* Manipula o ícone da lupa na barra de pesquisa */
   box-sizing: border-box;
   height: 30px;
   width: auto;
@@ -102,7 +102,7 @@ header{
   color: #ef752f84;
   margin-left: 5px;
 }
-.filter-button{
+.filter-button { /* Manipula o botão de filtro na barra de pesquisa */
   height: inherit;
   aspect-ratio: 1/1;
   box-sizing: border-box;
@@ -115,15 +115,15 @@ header{
   background-color: transparent;
   color: #EF762F;
 }
-.filter-button:hover{
+.filter-button:hover { /* Define mudanças de propriedades quando o mouse está sobre o botão de filtragem */
   color: #2260FF;
   border-color: #2260FF;
 }
-.filter-icon{
+.filter-icon { /* Manipula o ícone do botão de filtro */
   color: inherit;
   padding: inherit;
 }
-.full-card-profile{
+.full-card-profile { /* Manipula o cartão de perfil */
   width: auto;
   min-width: auto;
   max-height: min-content;
@@ -136,17 +136,17 @@ header{
   margin: 20px;
   border-radius: 16px;
 }
-.full-card-profile:hover{
+.full-card-profile:hover { /* Define propriedades quando o mouse está sobre um cartão de perfil */
   box-shadow: 0 0 20px 5px #FEE38A,
               0 0 40px 5px #C24500;
   cursor: pointer;
 }
-.card-profile{
+.card-profile { /* Manipula a div que possui os conteúdos do perfil (foto de perfil, nome, serviço) */
   display: flex;
   margin: 10px;
   row-gap: 10px;
 }
-.profile-picture{
+.profile-picture { /* Manipula a foto de perfil do card */
   height: 120px;
   object-fit: cover;
   overflow: hidden;
@@ -154,7 +154,7 @@ header{
   aspect-ratio: 1/1;
   border: 2px solid #9F3901;
 }
-.info{
+.info { /* Manipula a parte do perfil que contém somente informações de texto (nome, serviço) */
   width: 270px;
   row-gap: 5px;
   justify-content: start;
@@ -164,22 +164,22 @@ header{
   margin: auto;
   padding-left: 10px;
 }
-.profile-name{
+.profile-name { /* Manipula o nome de perfil de forma específica */
   font-weight: 600;
   color: #2260FF;
 }
-.profile-service{
+.profile-service { /* Manipula a informação do serviço de forma específica */
   font-weight: 300;
   color: black;
   font-size: 16px;
 }
-.card-actions{
+.card-actions { /* Manipula a div contendo os botões do cartão de perfil */
   height: fit-content;
   display: flex;
   align-items: center;
   column-gap: 5px;
 }
-.info-button{
+.info-button { /* Manipula o botão de info de forma específica */
   box-sizing: border-box;
   height: inherit;
   background-color: #2260FF;
@@ -192,12 +192,12 @@ header{
   text-align: center;
   font-weight: 600;
 }
-.info-button:hover{
+.info-button:hover  { /* Define as propriedades quando o mouse está sobre o botão de info */
   border-width: 3px;
   color: #2260FF;
   background-color: white;
 }
-.icon-button{
+.icon-button { /* Manipula os botões presentes no cartão de perfil */
   box-sizing: border-box;
   background-color: #fff;
   color: #2260ff;
@@ -207,19 +207,19 @@ header{
   width: 44px;
   padding: 5px;
 }
-.icon-button:hover{
+.icon-button:hover { /* Define as propriedades quando o mouse está sobre algum botão do cartão de perfil */
   border-width: 3px;
   color: white;
   border-color: white;
   background-color: #2260FF;
 }
-.button-icon{
+.button-icon { /* Manipula os ícones presentes nos botões do cartão de perfil */
   scale: 120%;
   aspect-ratio: 1/1;
   margin: auto;
   color: inherit;
 }
-.focus-description{
+.focus-description { /* Manipula a descrição no cartão de perfil */
   width: 90%;
   height: fit-content;
   max-height: 146px;
@@ -228,30 +228,29 @@ header{
   text-align: left;
   padding-bottom: 25px;
 }
-.servicos{
+.servicos { /* Manipula o h1 de Serviços presente no site */
   color: #EF762F;
   font-family: 'League Spartan';
   font-weight: 600;
   font-size: 30px;
 }
-.service-list{
+.service-list { /* Manipula a lista de serviços */
   width: fit-content;
   margin: 0 auto;
   align-content: center;
 }
-a {
+a { /* Define um padrão para hiperlink*/
   font-weight: 500;
   color: #2260FF;
   text-decoration: inherit;
-
 }
 
-a:hover {
+a:hover { /* Define um padrão para quando o mouse está sobre um hiperlink*/
   color: #00044e;
   box-shadow: #1a1a1a;
 }
 
-body {
+body { /* Define padrões pro corpo do projeto */
   margin: 0;
   display: flex;
   place-items: center;
@@ -259,12 +258,12 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+h1 { /* Define padrões para h1*/
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-button {
+button { /* Define padrões para botões */
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -274,7 +273,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+button:hover { /* Define como botões genéricos devem se comportar quando um mouse está sobre ele */
   border-color: #646cff;
   color: #646cff;
 }
@@ -282,7 +281,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+/* Manipulação para esquema de cores */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
